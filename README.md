@@ -1,75 +1,49 @@
 # ReconX
 
-ReconX is an automated reconnaissance and bug bounty framework written in Bash.
-It is designed to streamline recon workflows by combining multiple security tools
-into a single, efficient pipeline.
+ReconX is an automated reconnaissance and bug bounty framework written in **Bash**.
+It is built to simplify and accelerate recon workflows by chaining multiple
+industry‑standard security tools into a single, efficient pipeline.
 
-The goal of ReconX is to reduce manual effort, save time, and focus on
-high‑value attack surfaces during security assessments.
+ReconX focuses on **real‑world attack surfaces**, **signal over noise**,
+and **actionable results**, making it suitable for Bug Bounty hunters
+and penetration testers.
 
 ---
 
-## 🚀 Usage
+## ✨ Features
 
-```bash
-./reconx.sh example.com
-📂 Output
-All results are saved automatically under:
+- Automated subdomain enumeration
+- Alive hosts detection
+- URL & parameter discovery
+- JavaScript & API attack surface analysis
+- Automated vulnerability scanning
+- Bug bounty‑oriented workflow
+- Modular & extensible design
 
-text
-Copy code
-~/Desktop/Bughunting/example.com/
-Each module produces its own output files, including:
+---
 
-Subdomains enumeration
+## 🧰 Integrated Tools
 
-Alive hosts
-
-Discovered URLs
-
-Nuclei scan results
-
-Dalfox XSS findings
-
-SQLMap output
-
-JavaScript & API analysis
-
-🧰 Tools Used
 ReconX orchestrates the following open‑source tools:
 
-subfinder
+- subfinder  
+- assetfinder  
+- httpx  
+- katana  
+- waybackurls / gau  
+- nuclei  
+- dalfox  
+- sqlmap  
+- mantra  
 
-assetfinder
+All tools are executed in a controlled and optimized workflow to reduce noise.
 
-httpx
+---
 
-katana
+## 📥 Installation
 
-waybackurls / gau
+### 1️⃣ Clone the repository
 
-nuclei
-
-dalfox
-
-sqlmap
-
-mantra
-
-All tools are executed in a controlled and optimized workflow.
-
-⚙️ Requirements
-Linux (Kali Linux recommended)
-
-Go (latest version)
-
-Bash
-
-Make sure all tools are installed or allow ReconX to install them automatically.
-
-⚠️ Disclaimer
-This tool is intended for educational purposes and authorized security testing only.
-
-You must have explicit permission before testing any target.
-The author is not responsible for any misuse or damage caused by this tool.
-
+```bash
+git clone https://github.com/mosaeed01001101/reconx.git
+cd reconx
